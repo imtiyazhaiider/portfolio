@@ -1004,3 +1004,26 @@ button {
   object-fit: cover;
   border-radius: 16px;
 }
+
+.project-card {
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(56, 189, 248, 0.15);
+}
+
+.project-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.project-buttons .project-btn {
+  flex: 0 0 auto;
+  min-width: 180px;
+}
+.project-buttons {
+  justify-content: center;
+}
