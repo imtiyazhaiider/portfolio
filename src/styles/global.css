@@ -975,3 +975,25 @@ button {
     position: relative;
   }
 }
+
+.project-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.project-buttons .project-btn {
+  flex: 1;
+  text-align: center;
+}
+
+.github-project-btn {
+  background: transparent;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.github-project-btn:hover {
+  background: #38bdf8;
+  color: #000;
+}

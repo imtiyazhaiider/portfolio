@@ -1,22 +1,7 @@
 import poetryImage from "../assets/images/projects/poetry-website.png";
+
 function Projects() {
   const projects = [
-    {
-      title: "AI Fitness Tracker",
-
-      description:
-        "Machine Learning application that predicts calories burned during exercise using user health and activity data.",
-
-      tech: [
-        "Python",
-        "Machine Learning",
-        "RandomForestRegressor",
-        "Streamlit",
-      ],
-
-      github: "https://github.com/imtiyazhaiider/sukhan-poetry",
-    },
-
     {
       title: "Poetry Website",
 
@@ -30,41 +15,13 @@ function Projects() {
         "JavaScript",
       ],
 
-      github: "https://github.com/imtiyazhaiider/sukhan-poetry",
+      github:
+        "https://github.com/imtiyazhaiider/sukhan-poetry",
+
+      live:
+        "https://sukhan-6889.onrender.com",
 
       image: poetryImage,
-    },
-
-    {
-      title: "Portfolio Website",
-
-      description:
-        "Personal portfolio showcasing projects, skills, achievements and contact information.",
-
-      tech: [
-        "React",
-        "CSS",
-        "JavaScript",
-      ],
-
-      github: "#",
-    },
-
-    {
-      title: "AI Writing Assistant",
-
-      description:
-        "An AI-powered writing companion designed to help writers generate and improve content.",
-
-      tech: [
-        "Python",
-        "Django",
-        "OpenAI",
-      ],
-
-      github: "#",
-
-      status: "Coming Soon",
     },
   ];
 
@@ -78,24 +35,17 @@ function Projects() {
       </div>
 
       <div className="projects-grid">
-
         {projects.map((project, index) => (
           <div
             key={index}
             className="project-card"
           >
             <div className="project-image">
-
-                {project.image ? (
-                <img
-                    src={project.image}
-                    alt={project.title}
-                    className="project-img"
-                />
-                ) : (
-            project.title
-            )}
-
+              <img
+                src={project.image}
+                alt={project.title}
+                className="project-img"
+              />
             </div>
 
             <h3>{project.title}</h3>
@@ -113,23 +63,29 @@ function Projects() {
               ))}
             </div>
 
-            {project.status && (
-              <span className="status">
-                {project.status}
-              </span>
-            )}
+            <div className="project-buttons">
 
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noreferrer"
-              className="project-btn"
-            >
-              View Project
-            </a>
+              <a
+                href={project.live}
+                target="_blank"
+                rel="noreferrer"
+                className="project-btn"
+              >
+                View Project
+              </a>
+
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noreferrer"
+                className="project-btn github-project-btn"
+              >
+                GitHub
+              </a>
+
+            </div>
           </div>
         ))}
-
       </div>
     </section>
   );
