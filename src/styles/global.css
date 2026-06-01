@@ -1027,3 +1027,35 @@ button {
 .project-buttons {
   justify-content: center;
 }
+
+.project-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.project-buttons a {
+  flex: 1;
+  text-align: center;
+}
+
+.github-project-btn {
+  padding: 14px 20px;
+  border: 1px solid #38bdf8;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #38bdf8;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.github-project-btn:hover {
+  background: #38bdf8;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .project-buttons {
+    flex-direction: column;
+  }
+}

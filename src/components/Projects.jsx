@@ -1,7 +1,29 @@
 import poetryImage from "../assets/images/projects/poetry-website.png";
+import plantDiseaseImage from "../assets/images/projects/plant-disease.png";
 
 function Projects() {
   const projects = [
+    {
+      title: "AI Plant Disease Detection",
+
+      description:
+        "AI-powered plant disease detection and treatment recommendation system that identifies 38 plant diseases from leaf images using Deep Learning and provides intelligent treatment suggestions for farmers.",
+
+      tech: [
+        "React",
+        "Flask",
+        "Python",
+        "PyTorch",
+        "MobileNetV2",
+        "ONNX",
+        "Generative AI",
+      ],
+
+      live: "https://plantdiseasedetection-80k7.onrender.com",
+
+      image: plantDiseaseImage,
+    },
+
     {
       title: "Poetry Website",
 
@@ -15,11 +37,9 @@ function Projects() {
         "JavaScript",
       ],
 
-      github:
-        "https://github.com/imtiyazhaiider/sukhan-poetry",
+      live: "https://sukhan-6889.onrender.com",
 
-      live:
-        "https://sukhan-6889.onrender.com",
+      github: "https://github.com/imtiyazhaiider/sukhan-poetry",
 
       image: poetryImage,
     },
@@ -41,11 +61,15 @@ function Projects() {
             className="project-card"
           >
             <div className="project-image">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="project-img"
-              />
+              {project.image ? (
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="project-img"
+                />
+              ) : (
+                project.title
+              )}
             </div>
 
             <h3>{project.title}</h3>
@@ -74,14 +98,16 @@ function Projects() {
                 View Project
               </a>
 
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noreferrer"
-                className="project-btn github-project-btn"
-              >
-                GitHub
-              </a>
+              {project.github && (
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="github-project-btn"
+                >
+                  GitHub
+                </a>
+              )}
 
             </div>
           </div>
