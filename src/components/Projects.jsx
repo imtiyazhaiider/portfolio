@@ -21,6 +21,8 @@ function Projects() {
 
       live: "https://plantdiseasedetection-80k7.onrender.com",
 
+      github: "#",
+
       image: plantDiseaseImage,
     },
 
