@@ -22,9 +22,9 @@ function Hero() {
           intelligence, and create software solutions
           that solve real-world problems.
 
-          Currently pursuing Computer Science Engineering
-          while expanding my expertise in Full Stack
-          Development and AI.
+          With a degree in Computer Science Engineering,
+          I am passionate about Full Stack Development, 
+          AI technologies, and building impactful digital products.
         </p>
 
         <div className="hero-buttons">

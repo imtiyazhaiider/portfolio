@@ -19,12 +19,12 @@ function Contact() {
     )
       .then(
         () => {
-          setStatus("✅ Message sent successfully!");
+          setStatus("Message sent successfully!");
 
           form.current.reset();
         },
         () => {
-          setStatus("❌ Failed to send message. Please try again.");
+          setStatus("Failed to send message. Please try again.");
         }
       );
   };
@@ -46,11 +46,11 @@ function Contact() {
           </p>
 
           <div className="contact-details">
-            <p>📧 imtiyazhaider11@gmail.com</p>
+            <p>imtiyazhaider11@gmail.com</p>
 
-            <p>📍 India</p>
+            <p>India</p>
 
-            <p>💻 github.com/imtiyazhaiider</p>
+            <p>github.com/imtiyazhaiider</p>
           </div>
         </div>
 

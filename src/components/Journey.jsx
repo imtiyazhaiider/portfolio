@@ -1,10 +1,6 @@
 function Journey() {
   const timeline = [
     {
-      year: "2024",
-      title: "Started Web Development",
-    },
-    {
       year: "2025",
       title: "AICTE TechSaksham Internship",
     },
@@ -15,10 +11,6 @@ function Journey() {
     {
       year: "2026",
       title: "Built Poetry Website",
-    },
-    {
-      year: "2026",
-      title: "Started AI Engineering Journey",
     },
   ];
 
