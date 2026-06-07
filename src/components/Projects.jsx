@@ -1,6 +1,6 @@
 import poetryImage from "../assets/images/projects/poetry-website.png";
 import plantDiseaseImage from "../assets/images/projects/plant-disease.png";
-
+import snakeGameImage from "../assets/images/projects/snake-game.png";
 function Projects() {
   const projects = [
     {
@@ -42,6 +42,24 @@ function Projects() {
       github: "https://github.com/imtiyazhaiider/sukhan-poetry",
 
       image: poetryImage,
+    },
+
+    {
+      title: "Snake Game",
+
+      description:
+        "Classic Snake Game built in Python featuring score tracking, collision detection, food generation, and smooth gameplay mechanics.",
+
+      tech: [
+        "Python",
+        "Pygame",
+        "Game Development",
+        "OOP",
+      ],
+
+      github: "https://github.com/imtiyazhaiider/snake-game",
+
+      image: snakeGameImage,
     },
   ];
 
