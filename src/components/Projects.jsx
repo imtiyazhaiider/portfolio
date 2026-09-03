@@ -1,8 +1,33 @@
 import poetryImage from "../assets/images/projects/poetry-website.png";
 import plantDiseaseImage from "../assets/images/projects/plant-disease.png";
 import snakeGameImage from "../assets/images/projects/snake-game.png";
+import forgeresume from "../assets/images/projects/forge-resume.png";
+
 function Projects() {
   const projects = [
+    {
+      title: "Forge Resume",
+
+      description:
+        "An ATS-friendly resume builder with live preview, ATS scoring, job description keyword matching, resume optimization suggestions, automatic saving, and PDF download.",
+
+      tech: [
+        "React",
+        "JavaScript",
+        "Vite",
+        "HTML",
+        "CSS",
+        "LocalStorage",
+        "html2pdf.js",
+        "Vercel",
+      ],
+
+      live: "https://forge-resume-omega.vercel.app/",
+
+      github: "https://github.com/imtiyazhaiider/forge-resume",
+      image: forgeresume,
+    },
+
     {
       title: "AI Plant Disease Detection",
 
@@ -109,14 +134,16 @@ function Projects() {
 
             <div className="project-buttons">
 
-              <a
-                href={project.live}
-                target="_blank"
-                rel="noreferrer"
-                className="project-btn"
-              >
-                View Project
-              </a>
+              {project.live && (
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="project-btn"
+                >
+                  View Project
+                </a>
+              )}
 
               {project.github && (
                 <a
